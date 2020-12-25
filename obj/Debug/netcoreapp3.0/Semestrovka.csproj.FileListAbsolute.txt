@@ -1,0 +1,11 @@
+C:\Users\Bitard\Desktop\RiderProjects\Semestrovka\Semestrovka\bin\Debug\netcoreapp3.0\Semestrovka.exe
+C:\Users\Bitard\Desktop\RiderProjects\Semestrovka\Semestrovka\bin\Debug\netcoreapp3.0\Semestrovka.deps.json
+C:\Users\Bitard\Desktop\RiderProjects\Semestrovka\Semestrovka\bin\Debug\netcoreapp3.0\Semestrovka.runtimeconfig.json
+C:\Users\Bitard\Desktop\RiderProjects\Semestrovka\Semestrovka\bin\Debug\netcoreapp3.0\Semestrovka.runtimeconfig.dev.json
+C:\Users\Bitard\Desktop\RiderProjects\Semestrovka\Semestrovka\bin\Debug\netcoreapp3.0\Semestrovka.dll
+C:\Users\Bitard\Desktop\RiderProjects\Semestrovka\Semestrovka\bin\Debug\netcoreapp3.0\Semestrovka.pdb
+C:\Users\Bitard\Desktop\RiderProjects\Semestrovka\Semestrovka\obj\Debug\netcoreapp3.0\Semestrovka.csprojAssemblyReference.cache
+C:\Users\Bitard\Desktop\RiderProjects\Semestrovka\Semestrovka\obj\Debug\netcoreapp3.0\Semestrovka.AssemblyInfoInputs.cache
+C:\Users\Bitard\Desktop\RiderProjects\Semestrovka\Semestrovka\obj\Debug\netcoreapp3.0\Semestrovka.AssemblyInfo.cs
+C:\Users\Bitard\Desktop\RiderProjects\Semestrovka\Semestrovka\obj\Debug\netcoreapp3.0\Semestrovka.dll
+C:\Users\Bitard\Desktop\RiderProjects\Semestrovka\Semestrovka\obj\Debug\netcoreapp3.0\Semestrovka.pdb
