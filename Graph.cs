@@ -53,31 +53,37 @@ namespace Semestrovka
             }
         }
 
+        public void ConnectNodesById(int firstNode, int secondNode) => FindNode(firstNode).Connect(FindNode(secondNode));
+
         private void MakePairs()
         {
+            Node nodeWithPairs = null;
             foreach (Node node in nodes)
             {
                 if (node.IncidentNodes.Count() == 1)
                 {
-                    var pairNode = node.IncidentNodes.First();
-                    pairsList.Add(new Tuple<Node, Node>(node, pairNode));
-                    RemoveNode(node);
-                    RemoveNode(pairNode);
+                    AddPairInList(node);
                     return;
+                }
+                if (node.IncidentNodes.Count() > 1 && nodeWithPairs == null)
+                {
+                    nodeWithPairs = node;
                 }
             }
-            foreach (Node node in nodes)
+            if (nodeWithPairs != null)
             {
-                if(node.IncidentNodes.Count() > 1)
-                {
-                    var pairNode = node.IncidentNodes.First();
-                    pairsList.Add(new Tuple<Node, Node>(node, pairNode));
-                    RemoveNode(node);
-                    RemoveNode(pairNode);    
-                    return;
-                }
+                AddPairInList(nodeWithPairs);
+                return;
             }
             isPairSetted = true;
+        }
+
+        private void AddPairInList(Node node)
+        {
+            var pairNode = node.IncidentNodes.First();
+            pairsList.Add(new Tuple<Node, Node>(node, pairNode));
+            RemoveNode(node);
+            RemoveNode(pairNode);
         }
 
         public void GetPairs()
@@ -87,6 +93,6 @@ namespace Semestrovka
                 Console.WriteLine("Нода " + tuple.Item1.Id + " является парой с " + tuple.Item2.Id);
         }
 
-        public Node FindNode(int id) => nodes.FirstOrDefault(x => x.Id == id);
+       Node FindNode(int id) => nodes.FirstOrDefault(x => x.Id == id);
     }
 }

@@ -5,31 +5,35 @@
  Проанализировав все анкеты, вы определили множество взаимных симпатий. При этом одному субъекту может «взаимно симпатизировать» несколько объектов противоположного пола.
   Наконец, вырешили организовать вечер свиданий для своих клиентов. Решите этот вопрос таким образом, чтобы на вечере состоялось максимально возможное количество свиданий.
  */
-namespace Semestrovka
+namespace Semestrovka    
 {
     class Program
     {
         static void Main(string[] args)
         {
             Graph graph = new Graph();
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i <= 8; i++)
             {
                 graph.AddNodeById(i);
             }
-            graph.nodes[0].Connect(graph.nodes[1]);
-            graph.nodes[0].Connect(graph.nodes[4]);
-            graph.nodes[1].Connect(graph.nodes[2]);
-            graph.nodes[1].Connect(graph.nodes[5]);
-            graph.nodes[1].Connect(graph.nodes[4]);
-            graph.nodes[2].Connect(graph.nodes[3]);
-            graph.nodes[2].Connect(graph.nodes[5]);
-            graph.nodes[2].Connect(graph.nodes[6]);
-            graph.nodes[4].Connect(graph.nodes[5]);
-            graph.nodes[4].Connect(graph.nodes[7]);
-            graph.nodes[5].Connect(graph.nodes[8]);
-            graph.nodes[5].Connect(graph.nodes[7]);
-            graph.nodes[7].Connect(graph.nodes[8]);
-            graph.nodes[8].Connect(graph.nodes[6]);
+            graph.ConnectNodesById(0,1);
+            graph.ConnectNodesById(0,4);
+            graph.ConnectNodesById(1,2);
+            graph.ConnectNodesById(1,5);
+            graph.ConnectNodesById(1,4);
+            graph.ConnectNodesById(2,3);
+            graph.ConnectNodesById(2,5);
+            graph.ConnectNodesById(2,6);
+            graph.ConnectNodesById(4,5);
+            graph.ConnectNodesById(4,7);
+            graph.ConnectNodesById(5,8);
+            graph.ConnectNodesById(5,7);
+            graph.ConnectNodesById(7,8);
+            graph.ConnectNodesById(6,8);
+            
+          
+           
+         
             
             foreach (var node in graph.nodes)
             {
